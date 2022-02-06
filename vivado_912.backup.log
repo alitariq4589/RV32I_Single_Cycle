@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov  1 12:14:48 2021
+# Process ID: 912
+# Current directory: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10844 C:\Users\Ali\Documents\Online Lectures\Computer Architechture Lab\LAB 4\Vivado harcoded values\project_1.xpr
+# Log file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/vivado.log
+# Journal file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 853.023 ; gain = 113.836
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 874.270 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: main_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1636.148 ; gain = 94.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_module' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:238]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_fetch' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:375]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:386]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_fetch' (1#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:375]
+WARNING: [Synth 8-350] instance 'B1' of module 'Instruction_fetch' requires 8 connections, but only 7 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:269]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:469]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:483]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:477]
+WARNING: [Synth 8-3848] Net MemWrite in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:470]
+WARNING: [Synth 8-3848] Net ResultSrc in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:470]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (2#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:469]
+WARNING: [Synth 8-350] instance 'B2' of module 'Control_Unit' requires 12 connections, but only 9 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:273]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:609]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:613]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (3#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:609]
+INFO: [Synth 8-6157] synthesizing module 'address_generator' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:310]
+INFO: [Synth 8-6155] done synthesizing module 'address_generator' (4#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:310]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:351]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (5#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:351]
+INFO: [Synth 8-6157] synthesizing module 'ALU_2nd_operand_mux' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:631]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_2nd_operand_mux' (6#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:631]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:444]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:444]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:548]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:566]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:548]
+WARNING: [Synth 8-350] instance 'B8' of module 'ALU' requires 7 connections, but only 6 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:297]
+INFO: [Synth 8-6157] synthesizing module 'Return_Result' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:662]
+INFO: [Synth 8-6155] done synthesizing module 'Return_Result' (9#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:662]
+WARNING: [Synth 8-3848] Net alu_z in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:242]
+WARNING: [Synth 8-3848] Net LED_out in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'main' (10#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:238]
+WARNING: [Synth 8-350] instance 'f4' of module 'main' requires 5 connections, but only 3 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:181]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'main_module' (11#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+WARNING: [Synth 8-3331] design Return_Result has unconnected port zero_flag
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port MemWrite
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port ResultSrc
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[5]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design main has unconnected port alu_z
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[6]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[5]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[4]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[3]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[2]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[1]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1673.867 ; gain = 132.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1673.867 ; gain = 132.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1673.867 ; gain = 132.457
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Finished Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 2038.434 ; gain = 497.023
+34 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 2038.434 ; gain = 497.023
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov  1 12:18:33 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/synth_1/runme.log
+[Mon Nov  1 12:18:33 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov  1 12:22:21 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/synth_1/runme.log
+[Mon Nov  1 12:22:21 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov  1 12:25:58 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/synth_1/runme.log
+[Mon Nov  1 12:25:58 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AD322EA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  1 15:07:28 2021...

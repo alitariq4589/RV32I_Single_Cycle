@@ -1,0 +1,1331 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 25 16:50:34 2021
+# Process ID: 10956
+# Current directory: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1228 C:\Users\Ali\Documents\Online Lectures\Computer Architechture Lab\LAB 4\Vivado harcoded values\project_1.xpr
+# Log file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/vivado.log
+# Journal file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 866.473 ; gain = 143.016
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Oct 25 16:53:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 921.328 ; gain = 2.223
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: main_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1029.785 ; gain = 101.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_module' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:225]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_fetch' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:371]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_fetch' (1#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:360]
+WARNING: [Synth 8-350] instance 'B1' of module 'Instruction_fetch' requires 8 connections, but only 7 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:256]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:454]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:468]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:462]
+WARNING: [Synth 8-3848] Net MemWrite in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:455]
+WARNING: [Synth 8-3848] Net ResultSrc in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:455]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (2#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:454]
+WARNING: [Synth 8-350] instance 'B2' of module 'Control_Unit' requires 12 connections, but only 9 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:260]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:594]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:598]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (3#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:594]
+INFO: [Synth 8-6157] synthesizing module 'address_generator' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'address_generator' (4#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:297]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:338]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:342]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (5#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:338]
+INFO: [Synth 8-6157] synthesizing module 'ALU_2nd_operand_mux' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:616]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_2nd_operand_mux' (6#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:616]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:429]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:429]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:533]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:533]
+WARNING: [Synth 8-350] instance 'B8' of module 'ALU' requires 7 connections, but only 6 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:284]
+INFO: [Synth 8-6157] synthesizing module 'Return_Result' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:647]
+INFO: [Synth 8-6155] done synthesizing module 'Return_Result' (9#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:647]
+WARNING: [Synth 8-3848] Net alu_z in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:229]
+WARNING: [Synth 8-3848] Net LED_out in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'main' (10#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:225]
+WARNING: [Synth 8-350] instance 'my_main' of module 'main' requires 5 connections, but only 3 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:131]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:170]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'main_module' (11#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port MemWrite
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port ResultSrc
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[5]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design main has unconnected port alu_z
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[6]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[5]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[4]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[3]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[2]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[1]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1071.945 ; gain = 144.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1071.945 ; gain = 144.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1071.945 ; gain = 144.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Finished Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1408.613 ; gain = 480.723
+34 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1408.613 ; gain = 480.723
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.562 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1417.562 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.840 ; gain = 2.277
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1423.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_module' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:225]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_fetch' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:371]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_fetch' (1#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:360]
+WARNING: [Synth 8-350] instance 'B1' of module 'Instruction_fetch' requires 8 connections, but only 7 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:256]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:454]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:468]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:462]
+WARNING: [Synth 8-3848] Net MemWrite in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:455]
+WARNING: [Synth 8-3848] Net ResultSrc in module/entity Control_Unit does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:455]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (2#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:454]
+WARNING: [Synth 8-350] instance 'B2' of module 'Control_Unit' requires 12 connections, but only 9 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:260]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:594]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:598]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (3#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:594]
+INFO: [Synth 8-6157] synthesizing module 'address_generator' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'address_generator' (4#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:297]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:338]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:342]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (5#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:338]
+INFO: [Synth 8-6157] synthesizing module 'ALU_2nd_operand_mux' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:616]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_2nd_operand_mux' (6#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:616]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:429]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:429]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:533]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:533]
+WARNING: [Synth 8-350] instance 'B8' of module 'ALU' requires 7 connections, but only 6 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:284]
+INFO: [Synth 8-6157] synthesizing module 'Return_Result' [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:647]
+INFO: [Synth 8-6155] done synthesizing module 'Return_Result' (9#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:647]
+WARNING: [Synth 8-3848] Net alu_z in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:229]
+WARNING: [Synth 8-3848] Net LED_out in module/entity main does not have driver. [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'main' (10#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:225]
+WARNING: [Synth 8-350] instance 'my_main' of module 'main' requires 5 connections, but only 3 given [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:131]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:170]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'main_module' (11#1) [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v:123]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port MemWrite
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port ResultSrc
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[5]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design main has unconnected port alu_z
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[6]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[5]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[4]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[3]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[2]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[1]
+WARNING: [Synth 8-3331] design main has unconnected port LED_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1433.391 ; gain = 9.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1433.391 ; gain = 9.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1433.391 ; gain = 9.555
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Finished Parsing XDC File [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1459.035 ; gain = 35.199
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port LED_out [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net result is not permitted [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net result is not permitted [C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sources_1/new/Single_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Instruction_fetch
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-311] analyzing module ALU_2nd_operand_mux
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module Return_Result
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Instruction_fetch
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.address_generator
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.ALU_2nd_operand_mux
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Return_Result
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d69221c9815f4f1ca8c9a52385972f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 23:30:50 2021...

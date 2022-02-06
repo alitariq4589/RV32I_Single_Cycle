@@ -1,0 +1,215 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 25 13:52:39 2021
+# Process ID: 11160
+# Current directory: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2280 C:\Users\Ali\Documents\Online Lectures\Computer Architechture Lab\LAB 4\Vivado harcoded values\project_1.xpr
+# Log file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/vivado.log
+# Journal file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LED_out[6]} {LED_out[5]} {LED_out[4]} {LED_out[3]} {LED_out[2]} {LED_out[1]} {LED_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Result[3]} {Result[2]} {Result[1]} {Result[0]}]]
+place_ports {LED_out[6]} T10
+set_property package_pin "" [get_ports [list  {LED_out[4]}]]
+place_ports {LED_out[5]} R10
+place_ports {LED_out[4]} K16
+place_ports {LED_out[3]} K13
+place_ports {LED_out[2]} P15
+place_ports {LED_out[1]} T11
+place_ports {LED_out[0]} L18
+set_property package_pin "" [get_ports [list  {Result[3]}]]
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Anode_Activate[7]} {Anode_Activate[6]} {Anode_Activate[5]} {Anode_Activate[4]} {Anode_Activate[3]} {Anode_Activate[2]} {Anode_Activate[1]} {Anode_Activate[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LED_out[6]} {LED_out[5]} {LED_out[4]} {LED_out[3]} {LED_out[2]} {LED_out[1]} {LED_out[0]}]]
+place_ports {Anode_Activate[7]} U13
+place_ports {Anode_Activate[6]} K2
+place_ports {Anode_Activate[5]} T14
+place_ports {Anode_Activate[4]} P14
+place_ports {Anode_Activate[3]} J14
+place_ports {Anode_Activate[2]} T9
+place_ports {Anode_Activate[1]} J18
+place_ports {Anode_Activate[0]} J17
+place_ports {LED_out[6]} T10
+place_ports {LED_out[5]} R10
+place_ports {LED_out[4]} K16
+place_ports {LED_out[3]} K13
+place_ports {LED_out[2]} P15
+place_ports {LED_out[1]} T11
+place_ports {LED_out[0]} L18
+place_ports clk E3
+reset_run synth_1
+file mkdir {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new}
+close [ open {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc}}
+set_property target_constrs_file {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.srcs/constrs_1/new/LAB4_pins.xdc} [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list alu_z]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+launch_simulation
+source testbench.tcl
+refresh_design
+place_ports rst N17
+reset_run synth_1
+save_constraints
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+relaunch_sim
+relaunch_sim
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+relaunch_sim
+run 10 ms
+run 10 ms
+run 10 ms
+relaunch_sim
+relaunch_sim
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 s
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list alu_z]]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.runs/impl_1/main_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

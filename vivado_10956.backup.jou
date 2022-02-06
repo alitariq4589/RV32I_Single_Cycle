@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 25 16:50:34 2021
+# Process ID: 10956
+# Current directory: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1228 C:\Users\Ali\Documents\Online Lectures\Computer Architechture Lab\LAB 4\Vivado harcoded values\project_1.xpr
+# Log file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/vivado.log
+# Journal file: C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ali/Documents/Online Lectures/Computer Architechture Lab/LAB 4/Vivado harcoded values/project_1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source testbench.tcl
+synth_design -rtl -name rtl_1
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
